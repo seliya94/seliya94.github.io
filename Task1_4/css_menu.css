@@ -23,7 +23,6 @@ html {
 
 body{
     width: 320px;
-    min-height:700px;
     background: #F2F2F2;
     margin: 0 0 0 0;
 
@@ -31,7 +30,7 @@ body{
 
 .b-menu {
     width: 320px;
-    height: 100vh;
+    height:100vh;
     margin:0 0 0 0;
     position:0 0 0 0;
     padding: 0 0 0 0;
@@ -41,8 +40,15 @@ body{
     justify-content:flex-start; 
     align-items: flex-start;
     box-shadow: 1px 0 48px 6px lightgray;
+    overflow-y: scroll;
 
 }
+
+
+.b-menu::-webkit-scrollbar{
+    display:none;
+}
+
 
 
 .b-header{
