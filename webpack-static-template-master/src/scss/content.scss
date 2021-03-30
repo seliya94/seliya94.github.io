@@ -1,0 +1,263 @@
+@import './main-content.scss';
+
+a{
+    text-decoration: none;
+}
+.b-main{
+    margin:0 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start; 
+    align-items:flex-start;
+    background-color: $color__background;
+    border-top: 1px solid $color__border;
+    height:100%;
+
+    &::-webkit-scrollbar{
+    display:none;
+ }
+
+&__title{
+    line-height:40px;
+    font-size: 28px;
+    margin:24px  0px 0px 16px;
+    font-family: TTLakes-Bold;
+    color:$color__title; 
+    position:relative;
+}
+
+&__title::before{
+    content:"";
+    width:4px;
+    height:40px;
+    background-color:$color__icon;
+    position:absolute;
+    top:0px;
+    bottom:0px;
+    left:-16px;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+&__btn:hover{
+    opacity:0.6;
+}
+
+}
+
+
+.b-button{
+
+&::-webkit-scrollbar{
+    display:none;
+}
+    
+&__btn{
+    height:40px;
+    white-space:nowrap;
+    border: none;
+    background: none;
+    text-decoration:none;
+    padding:0 13px 0 13px ;
+    
+}
+
+&__name{
+    font-family: TTLakes-Medium;
+    font-size: 16px;
+    line-height:40px;
+    color:$color__btn-text;
+    text-align: center;
+    vertical-align: center;
+}
+
+&__btn:first-child{
+    margin-left:16px;
+}
+
+&__btn:hover{
+    background-color:white;
+    border: 2px solid $color__btn-selected;
+    border-radius: 6px;
+
+}
+
+}
+
+
+.b-menu__item{
+    margin-top: 24px;
+    margin-bottom: 24px;
+    width: 100%;
+    min-height:40px;
+    display:flex;
+    overflow-x: auto;
+    justify-content: flex-start;
+    padding:0;
+
+&::before{
+    content:"";
+    width:24px;
+    height:40px;
+    position:absolute;
+    background: linear-gradient(270deg, $color__background 16.84%, $color__gradient 100%);
+    left:auto;
+    right:0px;
+}
+
+}
+
+
+.b-content{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    min-width:320px;
+    margin-bottom: 24px;
+
+&__text{
+    margin-bottom:16px;
+    min-width:auto;
+    margin-left:16px;
+    margin-right:16px;
+    padding: 0;
+}
+
+&__desc{
+    font-family: TTLakes-Regular;
+    font-size: 14px;
+    white-space:wrap;
+    line-height: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+&__desc--appear--768{
+    display: none;
+}
+
+&__desc--appear--1120{
+    display: none;
+}
+
+&__desc--hidden{
+    display:none;
+}
+
+
+&__btn{
+    border: none;
+    background: none;
+    padding: 0 0 0 0;
+    margin-top:16px;
+    margin-left:32px;
+    font-family: TTLakes-Medium;
+    font-size: 16px;
+    color:black;
+    align-self: flex-start;
+    position: relative;
+
+}
+
+&__btn::before{
+    content:"";
+    width:24px;
+    height:40px;
+    position:absolute;
+    left:-29px;
+    right:auto;
+    position:absolute;
+    background: url(../img/expand.svg) no-repeat;
+}
+
+&__btn:active, 
+&__btn:focus {
+    outline: none;
+}
+
+&__btn:hover{
+    cursor:pointer;
+    opacity:0.7;
+}
+
+
+&__btn--close::before{
+    transform: matrix(1,0,0,-1,0,-15);
+}
+
+&__img{
+    width: 100%;
+    height: 100%;
+}
+
+}
+
+.b-main{
+&__text{
+  font-size:14px;
+  line-height: 20px;
+  font-family: TTLakes-Regular;
+  margin-left:auto;
+  margin-right:auto;
+  padding-left:16px;
+  padding-right:16px; 
+} 
+
+&__btn{
+    margin-left:16px;
+    margin-right:112px;
+
+ 
+}
+
+&__name{
+  margin-bottom: 57px;
+}
+
+&__link{
+    font-size:16px;
+    line-height: 24px;
+    font-family: TTLakes-Medium;
+    text-decoration: none;
+    color:black;
+}
+
+
+&__icon{
+    margin-left: 10px;
+ 
+}
+
+&_table{
+    display:none;
+}
+
+}
+
+.b-footer{
+    display:flex;
+
+    flex-direction: column;
+    justify-content: center; 
+    align-items:center;
+    height:100%;
+    width:100%;
+    padding-left:16px;
+    padding-right:16px;
+
+
+&__text{
+    font-size:14px;
+    line-height: 16px;
+    font-family: TTLakes-Regular;
+    color:$color__btn-text;
+    margin-bottom:16px;
+    text-align: center;
+    
+
+}
+
+}
+
+

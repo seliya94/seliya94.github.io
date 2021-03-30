@@ -1,0 +1,52 @@
+html {
+  box-sizing: border-box;
+    &::-webkit-scrollbar{
+    display:none;
+  }
+
+}
+*,*:before, *:after {
+  box-sizing: inherit;
+
+
+}
+
+
+@font-face {
+    font-family: TTLakes-Regular;
+    src: url(../fonts/TTLakes-Regular.ttf);
+}
+
+@font-face {
+    font-family: TTLakes-Medium;
+    src: url(../fonts/TTLakes-Medium.ttf);
+}
+
+@font-face {
+    font-family: TTLakes-Bold;
+    src: url(../fonts/TTLakes-Bold.ttf);
+}
+
+
+body{
+    min-width: 320px;
+    overflow-x: hidden;
+    margin:0 0 0 0;
+
+    &::-webkit-scrollbar{
+    display:none;
+ }
+}
+
+$color__btn: #EAEAEA;
+$color__background:  #F8F8F8;
+$color__border: #D9FFF5;
+$color__title: #1B1C21;
+$color__icon: #41F6D7;
+$color__btn-text:#7E7E82;
+$color__btn-selected: #B8FFEC;
+$color__input: #B5B6BC;
+$color__gradient: rgba(248, 248, 248, 0.0001);
+$color__link:#FF3E79;
+
+

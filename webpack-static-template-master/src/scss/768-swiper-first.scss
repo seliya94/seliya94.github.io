@@ -1,0 +1,143 @@
+
+
+@media (min-width:768px){
+
+.b-swiper{
+    min-height:322px;
+    max-height:100%;
+}
+.sw1-b-header{
+    height:56px;
+    box-sizing: border-box;
+}
+
+.sw1-h-title{
+    margin-left:24px;  
+}
+
+.sw1-b-main::before{
+    display:none;
+}
+.swiper-wrapper{
+    min-width: 768px;
+    height:160px;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start; 
+    align-items: center; 
+    flex-wrap: wrap;
+}
+
+.swiper-pagination,.swiper-pagination--two{
+    display:none;
+}
+
+
+.sw1-b-main__item{
+    margin-top:24px;
+    margin-bottom:24px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.sw1-m-content__item{
+    box-sizing: border-box;
+    width: 224px;
+    height:72px;
+    margin-left:24px;
+    margin-bottom: 16px;
+    background-color: white;
+    border: 1px solid $color__btn;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start; 
+    align-items: center;
+
+& > .sw1-m-content__btn{
+    margin-left: auto;
+    margin-right: 16px;
+}
+
+&--hidden{
+    display: none;
+}
+
+}
+
+.b-swiper--second{
+    min-height:307px;
+}
+
+.slider--two {
+  min-height: 160px;
+}
+.swiper-slide--two{
+    height:160px;
+}
+
+
+
+.sw1-b-content__btn{
+    border: none;
+    background: none;
+    padding: 0 0 0 0;
+    margin-left:57px;
+    font-family: TTLakes-Medium;
+    font-size: 16px;
+    line-height: 24px;
+    color:black;
+    display:flex;
+    align-self: flex-start;
+    position: relative;
+    height:58px;
+
+
+
+&:hover{
+    cursor: pointer;
+    opacity: 0.6;
+}
+&:active, 
+&:focus {
+    outline: none;
+}
+
+
+&--close--first{
+    margin-top:30px;
+    height:38px;
+}
+
+&--close--second{
+    margin-top:30px;
+    height:38px;
+}
+
+&::before{
+    content:'';
+    width:24px;
+    height:40px;
+    position:absolute;
+    left:-29px;
+    right:auto;
+    position:absolute;
+    background: url(../img/expand.svg) no-repeat;
+}
+
+
+&--close--first::before{
+    transform: matrix(1,0,0,-1,0,-15);
+}
+
+&--close--second::before{
+    transform: matrix(1,0,0,-1,0,-15);
+}
+
+}
+.sw1-m-content__link:hover{
+    opacity: 0.6;
+}
+
+
+}

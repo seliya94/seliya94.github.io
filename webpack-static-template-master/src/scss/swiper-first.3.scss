@@ -1,0 +1,52 @@
+
+
+.slider--three{
+    height: 244px;
+}
+
+.swiper-slide{
+
+&--three{
+    max-height: 200px;
+     box-sizing: border-box;
+}
+&__content{
+    margin-left:16px;
+    margin-top:16px;
+    align-self: flex-start;
+    position:relative;
+}
+
+&__title{
+    font-size:14px;
+    line-height: 16px;
+    color:$color__btn-text;
+    font-family:TTLakes-Regular; 
+    margin-bottom: 16px;
+    margin-right:16px;
+}
+
+&__value{
+    font-size:14px;
+    line-height: 18px;
+    color:black;
+}
+}
+
+.sw1-m-content__btn--order{
+    position:absolute;
+    left:auto;
+    right:0;
+    bottom:0;
+    top:auto;
+
+
+&--order:hover{
+    opacity: 0.7;
+}
+}
+
+
+.swiper-pagination--three{
+    top:214px;
+}

@@ -1,0 +1,301 @@
+
+
+
+@media(min-width:1440px){
+
+html{
+    background-color: lightgrey;
+}
+
+body{
+        width:1120px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+.b-content__desc--appear--1120{
+    display: block;
+}
+
+
+.b-main{
+    border-top: none;
+    margin-top: -44px;
+
+
+&__title,.b-content__text{
+    margin-left:32px;
+}
+
+&__title{
+    margin-top: 0;
+    margin-bottom: 8.37px;
+}
+
+&__title::before{
+    left:-32px;
+}
+
+}
+
+.h-logo{
+    display: none;
+}
+
+
+
+.h-button{
+
+&__btn:only-child{
+    display: none;
+}
+
+
+&--position--end > &__btn:first-child{
+    display: none;
+}
+
+&--position--end > &__btn:nth-child(2){
+    display: none;
+}
+
+&--position--end > &__btn:nth-child(3){
+    display: none;
+}
+
+&--position--end > &__btn:nth-child(4)::before{
+    content:"Оставить заявку";
+    width:auto;
+    height:auto;
+    background-color: unset;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: TTLakes-Medium;
+    white-space: nowrap;
+    position:absolute;
+    top:6px;
+    left:-133px;
+}
+
+&--position--end > &__btn:last-child{
+    margin-right: 32px;
+    margin-left: 160px;
+    position:relative;
+}
+&--position--end > &__btn:last-child::before{
+    content:"Статус ремонта";
+    width:auto;
+    height:auto;
+    background-color: unset;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: TTLakes-Medium;
+    white-space: nowrap;
+    position:absolute;
+    top:6px;
+    left:-133px;
+}
+
+}
+
+.b-header{
+    background-color: $color__background;
+    border-top: none;
+    align-items: flex-end;
+}
+
+
+.b-menu__item{
+    flex-wrap: wrap;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-bottom:19.22px;
+    margin-top: 2.37px;
+    width:1120px;
+    min-height:80px;
+
+}
+
+.b-menu__item::before{
+    display:none;
+}
+
+.b-button__btn{
+    padding: 0 17px 0 17px;
+
+
+   &:first-child{
+    margin-left:0px;
+}
+
+}
+
+.b-content{
+
+&__text{
+    margin-right: 36px;
+}
+
+&__desc--appear--768,&__desc--appear--1120{
+    display: inline;
+}
+
+&__btn{
+    margin-top: 13.78px;
+}
+
+&__img{
+    margin-right:28.65px;
+}
+
+}
+
+.b-main{
+
+&_table{
+    width:1056px;
+    box-sizing: content-box;
+    padding: 0 0 0 0;
+    align-self: center;
+}
+
+
+&__text{
+  margin-left:32px;
+}
+
+&__btn{
+    margin-left:32px;
+}
+
+}
+
+tr{
+   width:1056px; 
+}
+
+td {
+
+   &:first-child{
+      width:528px;
+
+}
+
+   &:nth-child(2){
+      width:158.4;
+}
+
+   &:nth-child(3){
+      width:158.4;
+}
+
+   &:nth-child(4){
+      width:211.2;
+}
+}
+
+.b-footer{
+
+    padding-left:32px;
+    padding-right:32px;
+}
+
+
+
+body{
+    position:relative;
+    left:160px;
+}
+
+.pop-up__first{
+    display:block;
+    position:absolute;
+    width:320px;
+    left:-320px;
+
+& > .pop-up__blur{
+    display:none;
+}
+
+}
+
+.pop-up__second{
+width:100%;
+position:absolute;
+
+}
+
+.m-b-menu > .m-b-header--menu{
+    flex-direction: row;
+    min-height:72px;
+
+}
+
+ .b-main__title--menu{
+    line-height: 32px;
+
+
+    &::before{
+        top:auto;
+    }
+ }
+
+
+.m-b-header--menu {
+    & > .m-h-button > .m-h-button__btn--second{
+    margin-top:32px;
+    margin-left:-75px;
+    margin-right:0;
+    position:absolute;
+
+}
+
+    & > .b-main__title--menu{
+        margin-left:32px;
+        margin-top:40px;
+    }
+
+     & > .b-main__title--menu::before{
+         left:-32px;
+     }
+
+}
+
+.pop-up__first > .m-menu > .m-b-menu{
+box-shadow: none;
+}
+
+
+
+.pop-up__first > .m-menu > .m-b-menu > .m-b-header{
+    & > .m-h-button{
+    display:none;
+    }
+    & > .m-h-menu{
+        margin-top:30px;
+    }
+   
+}
+
+
+.m-h-logo{
+    margin-left:22px;
+    margin-top:16px;
+}
+
+.m-b-footer{
+    margin-top:241px;
+}
+
+
+.m-b-main{
+    &__form > input, &__form > textarea{
+    margin-left:32px;
+    margin-right:32px;
+}
+
+    &__text{
+    padding-left:32px;
+    padding-right:32px;
+}
+}
+}
